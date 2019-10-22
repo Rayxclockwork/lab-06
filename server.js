@@ -70,6 +70,9 @@ function Weather(city, wData) {
 
   forecast.push(this);
 }
-
+Weather.prototype.revisedDate = function (time){
+  let date = new Date(time*1000);
+  return date.toDateString();
+};
 
 app.listen(PORT, () => console.log(`app is listening on ${PORT}`));
