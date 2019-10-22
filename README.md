@@ -22,7 +22,7 @@
 
 # Feature 1: Locations
 # Estimate of time needed: 1.5 hours
-# Start time: 9:40am
+# Start time: 10:00am
 # Finish time:
 # Actual time needed:
 
