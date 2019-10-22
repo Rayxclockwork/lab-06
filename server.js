@@ -42,30 +42,30 @@ function Locale(city, geoData) {
 }
 
 
-app.get('/weather', (request, response) => {
-  try{
-    const weather = request.query.data;
-    const weatherData = searchWeather(weather);
-    response.send(weatherData);
-  }
-  catch(error) {
-    console.error(error);
+// app.get('/weather', (request, response) => {
+//   try{
+//     const weather = request.query.data;
+//     const weatherData = searchWeather(weather);
+//     response.send(weatherData);
+//   }
+//   catch(error) {
+//     console.error(error);
 
-    response.status(500).send('So sorry, something wrong over here!');
-};
+//     response.status(500).send('So sorry, something wrong over here!');
+// };
 
-function searchWeather(weather) {
-  const wData = require('./data/darksky.json');
-  const weatherObject = new Weather(city, wData);
+// function searchWeather(weather) {
+//   const wData = require('./data/darksky.json');
+//   const weatherObject = new Weather(city, wData);
 
-  return weatherObject;
-}
+//   return weatherObject;
+// }
 
-function Weather(city, wData) {
-  this.search_query = city;
-  this.forecast = wData.results.hourly.summary
-  this.time = wData.results.hourly.time
-}
+// function Weather(city, wData) {
+//   this.search_query = city;
+//   this.forecast = wData.results.hourly.summary
+//   this.time = wData.results.hourly.time
+// }
 
 
 app.listen(PORT, () => console.log(`app is listening on ${PORT}`));
