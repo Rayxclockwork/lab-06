@@ -41,6 +41,7 @@ function Locale(city, geoData) {
   this.longitude = geoData.results[0].geometry.location.lng;
 }
 
+let forecast =[];
 
 app.get('/weather', (request, response) => {
   try{
@@ -52,19 +53,22 @@ app.get('/weather', (request, response) => {
     console.error(error);
 
     response.status(500).send('So sorry, something wrong over here!');
-};
+  }
+});
 
-function searchWeather(weather) {
+function searchWeather(location) {
   const wData = require('./data/darksky.json');
-  const weatherObject = new Weather(city, wData);
+  const weatherObject = new Weather(location, wData);
 
   return weatherObject;
 }
 
 function Weather(city, wData) {
   this.search_query = city;
-  this.forecast = wData.results.hourly.summary
-  this.time = wData.results.hourly.time
+  this.forecast = wData.results.hourly.summary;
+  this.time = wData.hourly.time;
+
+  forecast.push(this);
 }
 
 
