@@ -1,6 +1,7 @@
 # City Explorer
 
 **Author**: Raven Delaney
+**collaboration with Rosalyn Johnson**
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
@@ -27,7 +28,7 @@
 # Actual time needed: 48 minutes
 
 # Feature 2: Weather
-# Estimate of time needed: 1 hours
+# Estimate of time needed: 1.5 hours
 # Start time: 10:50am
 # Finish time:
 # Actual time needed:
