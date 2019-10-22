@@ -23,12 +23,12 @@
 # Feature 1: Locations
 # Estimate of time needed: 1.5 hours
 # Start time: 10:00am
-# Finish time:
-# Actual time needed:
+# Finish time: 10:48am
+# Actual time needed: 48 minutes
 
 # Feature 2: Weather
-# Estimate of time needed:
-# Start time:
+# Estimate of time needed: 1 hours
+# Start time: 10:50am
 # Finish time:
 # Actual time needed:
 
